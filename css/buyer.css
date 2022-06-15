@@ -1,13 +1,15 @@
 @media (max-width: 360px) {
 
 .hero{
-    background-image: url(../img/hero.png);
+    /* background-image: url(../img/hero.png); */
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     background-position: center center;
     background-size: cover;
     display: block;
     height: 250px;
+    z-index: -1;
+    position: relative;
 }
  h1 {
   font-family: "Poppins";
@@ -34,7 +36,10 @@
  .container {
   padding: 0px 16px 0px 16px;
  }
-
+.menu{
+    
+  margin-top: 34px;
+}
  .row {
   padding: 16px 24px;
   display: block;
@@ -73,5 +78,31 @@
   line-height: 20px;
   text-align: center;
   color: #FFFFFF;
+ }
+
+ .nav{
+    top: 30px;
+    padding: 14px 16px;
+    position: absolute;
+ }
+
+ .crsl{
+    margin-bottom: 3rem;
+    
+ }
+ .crsl li{
+  border-radius: 100%;
+  box-sizing: border-box;
+
+width: 6px;
+height: 6px;
+
+background: transparent;
+
+border: 1px solid #FFFFFF;
+ }
+
+ .crsl .active{
+    background: #FFFFFF;
  }
 }
